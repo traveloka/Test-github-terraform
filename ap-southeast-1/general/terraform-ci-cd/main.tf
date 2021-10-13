@@ -17,7 +17,7 @@ module "terraform_ci_cd" {
   terraform_version = "0.12.31" // it's recommended to always use latest version but make sure the module already supports that version
   product_domain    = "fdl" // ex. bei
   environment       = "testing" // ex. staging
-  image             = "015110552125.dkr.ecr.ap-southeast-1.amazonaws.com/bei-codebuild-terraform-ci-cd-app:v0.2.3" // it's recommended to always use latest version
+  image             = "015110552125.dkr.ecr.ap-southeast-1.amazonaws.com/bei-codebuild-terraform-ci-cd-app:v0.2.5" // it's recommended to always use latest version
  
   source_repository_url = "https://github.com/traveloka/Test-github-terraform.git" // e.g. https://github.com/traveloka/tvlk-bei-stg-terraform-aws.git
 }
