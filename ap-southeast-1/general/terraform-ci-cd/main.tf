@@ -21,5 +21,5 @@ module "terraform_ci_cd" {
 
   source_repository_url = "https://github.com/traveloka/Test-github-terraform.git" // e.g. https://github.com/traveloka/tvlk-bei-stg-terraform-aws.git
 
-  cd_post_build_commands = [". cd-notify-apply-output-to-github-pr.py"]
+  cd_post_build_commands = ["cd-notify-apply-output-to-github-pr.py"]
 }
