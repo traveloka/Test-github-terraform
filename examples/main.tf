@@ -18,7 +18,7 @@ module "this" {
   # source = "../../modules/lambda"
 
   product_domain   = "fdl"
-  service_name     = "txtjobs"
-  descriptive_name = "Periodic Scheduler"
+  service_name     = "txtjobs2"
+  descriptive_name = "Periodic Scheduler2"
   environment      = "testing"
 }
