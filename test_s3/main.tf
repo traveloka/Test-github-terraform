@@ -12,11 +12,11 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "test" {
-  bucket = "test-fadhil-151220210925"
+  bucket = "test-fadhil-151220211449"
   acl    = "private"
 
   tags = {
-    Name        = "test-fadhil-151220210925"
+    Name        = "test-fadhil-151220211449"
     Environment = "testing"
   }
 }
