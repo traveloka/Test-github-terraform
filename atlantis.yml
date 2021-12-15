@@ -1,0 +1,30 @@
+version: 3
+automerge: true
+delete_source_branch_on_merge: true
+projects:
+- name: test-s3
+  dir: test_s3
+  workspace: default
+  terraform_version: v0.13.7
+  delete_source_branch_on_merge: true
+  autoplan:
+    when_modified: ["*.tf"]
+    enabled: true
+  apply_requirements: [mergeable, approved]
+  workflow: default
+#workflows:
+#  myworkflow:
+#    plan:
+#      steps:
+#      - run: my-custom-command arg1 arg2
+#      - init
+#      - plan:
+#          extra_args: ["-lock", "false"]
+#      - run: my-custom-command arg1 arg2
+#    apply:
+#      steps:
+#      - run: echo hi
+#      - apply
+#allowed_regexp_prefixes:
+#- dev/
+#- staging/#
